@@ -23,3 +23,4 @@ lines(F$Edad, F$Prima, type="b", lwd=1.5,
 legend(xrange[1], yrange[2], c("F","M"), cex=.7, col=c(8,5),
   	pch=c(19,18), lty=c(8,5), title="Sexo")
 ```
+![plot of chunk unnamed-chunk-2](images/plot1.png) 
