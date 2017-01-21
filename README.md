@@ -44,7 +44,8 @@ Arbol<-rpart(Prima  ~ .,data=primas2,parms=list(split="information"))
 
 rpart.plot(Arbol, type=1, extra=100)
 ```
-![plot of arbol de decisión](images/arbol1.png) 
+![plot of arbol de decisión](images/arbol1.png)
+
 El árbol de decisión, en una primera instancia, sólo segmenta una vez: en hombre y mujer.
 
 La raíz del árbol contiene el 100% de la población e indica que en promedio los clientes pagan $1250 por su seguro de auto.
@@ -53,5 +54,5 @@ Al segmentar obtenemos dos nodos, cada uno con el 50% de la población:
 * **Nodo 1:** Hombres, en promedio pagan una prima de $1000.
 * **Nodo 2:** Mujeres, en promedio pagan una prima de $1500.
 
-De nuevo concluimos que las primas son más elevadas para las mujeres, estas son en promedio 50% más caras que las de un hombre.
+De nuevo concluimos que las primas son más elevadas para las mujeres, estas son en promedio 50% más caras que las de los hombres.
 
