@@ -46,4 +46,4 @@ Arbol<-rpart(Prima  ~ .,data=primas2,parms=list(split="information"))
 rpart.plot(Arbol, type=1, extra=100)
 ```
 
-![plot of arbol](images/arbol1.png) 
+![plot of arbol de decisión](images/arbol1.png) 
