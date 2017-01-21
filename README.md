@@ -22,7 +22,7 @@ lines(M$Edad, M$Prima, type="b", lwd=1.5, lty=5, col=5, pch=18)
 
 legend(xrange[1], yrange[2], c("F","M"), cex=.7, col=c(8,5), pch=c(19,18), lty=c(8,5), title="Sexo")
 ```
-![plot of edad y sexo](images/plot1.png) 
+![plot of edad y sexo](images/edadsexo.png) 
 
 La anterior gráfica muestra una clara diferencia entre la prima cobrada a mujeres y la cobrada a hombres, donde estos últimos tienen que pagar menos por el seguro de su auto. 
 
