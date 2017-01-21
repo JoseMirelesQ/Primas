@@ -8,7 +8,6 @@
 ### Edad y Sexo vs Prima
 
 ```R
-xrange<-range(primas$Prima)
 xrange<-range(primas$Edad)
 yrange<-range(primas$Prima)
 plot(xrange, yrange, type="n", xlab="Edad", ylab="Prima" ) 
