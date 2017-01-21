@@ -54,4 +54,10 @@ ModeloArbol<-rpart(Prima  ~ .,data=primas2,parms=list(split="information"))
 # PASO 4: Crea Grafico
 rpart.plot(ModeloArbol, type=1, extra=100,cex = .7, box.col=c("gray99", "gray88")[ModeloArbol$frame$yval])
 ```
+d
+
+```{r echo =FALSE}
+Algo
+```
+
 ![plot of arbol](images/arbol1.png) 
