@@ -1,9 +1,9 @@
-## Primas
+# Primas
 
-#Análisis Univariado
+##Análisis Univariado
 
 
-#Análisis Bivariado
+##Análisis Bivariado
 
 ### Edad y Sexo vs Prima
 
