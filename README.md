@@ -1,5 +1,11 @@
-# Primas
+## Primas
 
+#Análisis Univariado
+
+
+#Análisis Bivariado
+
+### Edad y Sexo vs Prima
 
 ```R
 xrange<-range(primas$Prima)
@@ -23,4 +29,7 @@ lines(F$Edad, F$Prima, type="b", lwd=1.5,
 legend(xrange[1], yrange[2], c("F","M"), cex=.7, col=c(8,5),
   	pch=c(19,18), lty=c(8,5), title="Sexo")
 ```
-![plot of chunk unnamed-chunk-2](images/plot1.png) 
+![plot of edad y sexo](images/plot1.png) 
+
+La anterior gráfica muestra una clara diferencia entre la prima cobrada a mujeres y la cobrada a hombres, donde estos últimos tienen que pagar menos por el seguro de su auto. 
+En cambio la edad pareciera no ser un factor fuerte al momento de calcular las primas, pues bien puede haber mujeres jovenes que gastan lo mismo en su seguro de auto que mujeres adultas; lo mismo se percibe en los hombres.
