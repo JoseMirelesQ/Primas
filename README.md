@@ -41,9 +41,9 @@ primas2$Fecha<-as.Date(primas2$Fecha,"%d/%m/%Y")
 clases <- cut(primas2$Fecha, "year", labels=c(2014,2015,2016,2017))
 primas2$Fecha <- as.factor(clases)
 
-ModeloArbol<-rpart(Prima  ~ .,data=primas2,parms=list(split="information"))
+Arbol<-rpart(Prima  ~ .,data=primas2,parms=list(split="information"))
 
-rpart.plot(ModeloArbol, type=1, extra=100,cex = .7, box.col=c("gray99", "gray88")[ModeloArbol$frame$yval])
+rpart.plot(Arbol, type=1, extra=100)
 ```
 
 ![plot of arbol](images/arbol1.png) 
