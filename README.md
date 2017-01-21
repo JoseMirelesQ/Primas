@@ -16,11 +16,11 @@ plot(xrange, yrange, type="n", xlab="Edad", ylab="Prima" )
 M <- subset(primas, Sexo=="M")
 F <- subset(primas, Sexo=="F")
 
-lines(F$Edad, F$Prima, type="b", lwd=1.5, lty=8, col=8, pch=19)
-    
-lines(M$Edad, M$Prima, type="b", lwd=1.5, lty=5, col=5, pch=18)
+points(F$Edad, F$Prima, lty=8, col=8, pch=19)
 
-legend(xrange[1], yrange[2], c("F","M"), cex=.7, col=c(8,5), pch=c(19,18), lty=c(8,5), title="Sexo")
+points(M$Edad, M$Prima, lty=5, col=5, pch=18)
+
+legend(xrange[1], yrange[2], c("F","M"),cex=.7, col=c(8,5), pch=c(19,18), lty=c(8,5), title="Sexo")
 ```
 ![plot of edad y sexo](images/edadsexo.png) 
 
