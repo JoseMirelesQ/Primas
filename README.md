@@ -116,7 +116,7 @@ Logistic|1000.7258|56.9268|1500.69773|85.52088
 
 Con esto comprobamos que dada una distribución *X* que describe la prima cobrada a los hombres para su seguro de autos, la variable que determina lo mismo para las mujeres es *(1.5)X*. Por lo tanto supondremos que, en un principio, la variable *Prima* se modela de igual forma para hombres que para mujeres pero al final ***a las mujeres se les cobra un recargo del 50%*** de la prima calculada.
 
-Dicho esto, con el fin de buscar más variables significativas al momento de calcular la prima, modificaremos un poco la tabla de datos, cambiando el valor de la prima de cada mujer por ese mismo valor sobre 1.5 y, finalmente, eliminando la variable *Sexo*:
+Dicho esto, con el fin de buscar más variables significativas al momento de calcular la prima, modificaremos un poco la tabla de datos aplicando la misma transformación de la variable *Fecha* que el aplicado anteriormente en el Árbol de decisión, cambiando el valor de la prima de cada mujer por ese mismo valor sobre 1.5 y, finalmente, eliminando la variable *Sexo*:
 
 ```R
 primas2<-primas
