@@ -5,13 +5,16 @@ Para poder trabajar con el archivo *primas.csv* en *R* y darle un primer vistazo
 #Guarda la tabla en "primas"
 primas<-read.csv("primas.csv")
 
-#Muestra las primeras observaciones de la tabla
-head(primas)
+#Muestra las últimas observaciones de la tabla
+tail(primas)
 ```
 ![tabla](images/primas.png)
+Nuestra tabla de datos se compone de 1000 observaciones y seis variables: *Sexo*, *Prima*, *Edad*, *Marca*, *Fecha*, *Estado*.
 
 
-##Análisis Univariado
+##Análisis Univariado: conociendo nuestra cartera
+
+
 
 
 ##Análisis Multivariado
