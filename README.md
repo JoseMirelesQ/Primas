@@ -3,7 +3,7 @@
 ##Análisis Univariado
 
 
-##Análisis Bivariado
+##Análisis Multivariado
 
 ### Edad y Sexo vs Prima
 
@@ -28,7 +28,7 @@ La anterior gráfica muestra una clara diferencia entre la prima cobrada a mujer
 En cambio la edad pareciera ser una variable poco importante al momento de calcular las primas, pues bien puede haber mujeres jóvenes que gastan lo mismo en su seguro de auto que algunas mujeres adultas; lo mismo se percibe en los hombres.
 
 
-##Árbol de decisión
+###Árbol de decisión
 
 ```R
 library(rpart)
@@ -56,3 +56,24 @@ Al segmentar obtenemos dos nodos, cada uno con el 50% de la población:
 
 De nuevo concluimos que las primas son más elevadas para las mujeres, estas son en promedio 50% más caras que las de los hombres.
 
+
+##
+
+Con los resultados anteriores nos hemos dado cuenta que la variable *Sexo* influye bastante al momento de calcular una prima, pues en promedio las mujeres pagan más: ¿será que se modela diferente o ambos sexo seguirán la misma distibución salvo un recargo?
+
+Para responder la anterior pregunta analizaremos qué ocurre con la variable *Prima* dado que el cliente es hombre (*Sexo=="M"*) y, por otro lado, dado que es mujer (*Sexo=="F"*):
+
+```R
+summary(primas[primas$Sexo=="M","Prima"])
+``` 
+Min.  | 1st Qu.| Median |  Mean | 3rd Qu. |  Max. 
+------|--------|--------|--------|--------|-------
+672.2 | 935.2  | 1004.0 | 1000.0 | 1067.0 | 1275.0 
+
+
+```R
+summary(primas[primas$Sexo=="F","Prima"])
+```
+Min. | 1st Qu.| Median | Mean | 3rd Qu.| Max. 
+-----|--------|--------|------|--------|-------
+1045 | 1398   | 1504   | 1500 | 1595   | 1958 
