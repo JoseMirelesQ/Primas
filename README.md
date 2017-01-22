@@ -34,7 +34,7 @@ summary(edad)
 
 Los resultados anteriores nos señalan que el rango de edad de los clientes es entre 18 y 80 años; en promedio tienen entre 48 y 49 años.
 
-La desviación estándar está dada por la función sd():
+La desviación estándar está dada por la función `sd()`:
 ```R
 #Desviación Estándar
 sd(edad)
@@ -59,7 +59,20 @@ lines(density(runif(1000,min(edad),max(edad))),col="blue")
 ![tabla](images/histedad.png)
 
 ### Marca de auto
+Cada marca de auto que aparece en esta tabla y su respectiva frecuencia la podemos obtener con la función `table()`:
+```R
+table(primas$Marca)
+```
+![Marca](images/marcatabla.png)
 
+```R
+nrow(table(primas$Marca))
+```
+![Marca](images/marcacant.png)
+
+Contamos con 8 marcas diferentes, la mayoría de los autos son Jetta y la marca con menos presencia es March.
+
+Graficamente podemos ver los resultados anteriores con la función `barplot()`:
 ```R
 #Barras de frequencia en la variable "Marca"
 barplot(table(primas$Marca), main="Marca", col=8)
