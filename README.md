@@ -77,3 +77,13 @@ summary(primas[primas$Sexo=="F","Prima"])
 Min. | 1st Qu.| Median | Mean | 3rd Qu.| Max. 
 -----|--------|--------|------|--------|-------
 1045 | 1398   | 1504   | 1500 | 1595   | 1958 
+
+
+Si analizamos la proporción de las medidas de tendencia de las primas de mujeres y hombres nos daremos cuenta, una vez más, que las mujeres pagan aproximadamente 50% más que los hombres.
+
+```R
+summary(primas[primas$Sexo=="F","Prima"])/summary(primas[primas$Sexo=="M","Prima"])
+```
+  Min.  | 1st Qu.| Median | Mean   | 3rd Qu.|   Max.
+--------|--------|--------|--------|--------|-------
+1.554597|1.494867|1.498008|1.500000|1.494845|1.535686 
