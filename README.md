@@ -58,7 +58,7 @@ De nuevo concluimos que las primas son más elevadas para las mujeres, estas son
 
 
 
-##
+##Distribución de la variable *Prima*
 
 Con los resultados anteriores nos hemos dado cuenta que la variable *Sexo* influye bastante al momento de calcular una prima, pues en promedio las mujeres pagan más: ¿será que se modela diferente o ambos sexo seguirán la misma distibución salvo un recargo?
 
