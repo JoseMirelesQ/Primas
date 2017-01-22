@@ -14,8 +14,11 @@ Nuestra tabla de datos se compone de 1000 observaciones y seis variables: *Sexo*
 
 ##Análisis Univariado: conociendo nuestra cartera
 
-
-
+```R
+#Gráfica de barras de la frequencia en la variable "Sexo"
+barplot(table(primas$Sexo), main="Sexo", col=8)
+```
+![Sexo](images/sexo.png)
 
 ##Análisis Multivariado
 
