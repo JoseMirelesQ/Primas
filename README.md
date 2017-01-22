@@ -9,6 +9,7 @@ primas<-read.csv("primas.csv")
 tail(primas)
 ```
 ![tabla](images/primas.png)
+
 Nuestra tabla de datos se compone de 1000 observaciones y seis variables: *Sexo*, *Prima*, *Edad*, *Marca*, *Fecha*, *Estado*.
 
 
