@@ -1,5 +1,16 @@
 # Primas
 
+Para poder trabajar con el archivo *primas.csv* en *R* y darle un primer vistazo a la tabla de datos ejecutaremos el siguiente código:
+```R
+#Guarda la tabla en "primas"
+primas<-read.csv("primas.csv")
+
+#Muestra las primeras observaciones de la tabla
+head(primas)
+```
+![tabla](images/primas.png)
+
+
 ##Análisis Univariado
 
 
