@@ -207,12 +207,12 @@ ajuste<-fit.cont(primas[primas$Sexo=="F","Prima"])
 ```
 
 
-Dist.   | Hombres|        | Mujeres  |       |
---------|--------|--------|----------|--------
-        |Mean    | SD     | Mean     | SD
-Normal  |1000    |99.89995|1500      |149.8499 
-        |location|  scale |location  |scale
-Logistic|1000.7258|56.9268|1500.69773|85.52088
+Dist.   | Hombres |        | Mujeres  |        |
+--------|---------|--------|----------|---------
+        |Mean     | SD     | Mean     | SD
+Normal  |1000     |99.89995|1500      |149.8499 
+        |location |  scale |location  |scale
+Logistic|1000.7258|56.9268 |1500.69773|85.52088
 
 Con esto comprobamos que dada una distribución *X* que describe la prima cobrada a los hombres para su seguro de autos, la variable que determina lo mismo para las mujeres es *(1.5)X*. Por lo tanto supondremos que, en un principio, la variable *Prima* se modela de igual forma para hombres que para mujeres pero al final ***a las mujeres se les cobra un recargo del 50%*** de la prima calculada.
 
@@ -249,10 +249,10 @@ ajuste<-fit.cont(vPrima)
 ![segmentacion](images/primafit.png)
 
 
-Dist.         | Normal | Logistica
---------------|--------|--------
-*$\theta_{1}$*|  1000  |1000.5809
-*$\theta_{2}$*|99.89995|56.9967
+Dist.   | Normal | Logistica
+--------|--------|--------
+$\theta$|  1000  |1000.5809
+$\theta$|99.89995|56.9967
        
 
 Distribución real de la variable *Prima* comparado con 20 simulaciones de una distribución Logistica(1000.5809,56.9967):
