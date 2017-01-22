@@ -107,7 +107,7 @@ ajuste<-fit.cont(primas[primas$Sexo=="F","Prima"])
 ```
 
 
-Dist.   | Hombres|        | Mujeres  |       
+Dist.   | Hombres|        | Mujeres  |       |
 --------|--------|--------|----------|--------
         |Mean    | SD     | Mean     | SD
 Normal  |1000    |99.89995|1500      |149.8499 
