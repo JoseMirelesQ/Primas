@@ -49,7 +49,7 @@ ks.test(edad,y="punif",min(edad),max(edad))
 
 Dado que el *p-value* es 0.1611, mayor que un nivel de significación 0.05 o 0.10 no podemos rechazar la hipótesis de que la muestra *Edades* se distribuye como una Uniforme(a,b) con a=min(edad)=18 y b=max(edad)=80.
 
-Distribución real de la variable *Edades* comparado con 50 simulaciones de una distribución Unif(18,80): 
+Distribución real de la variable *Edades* comparada con 50 simulaciones de una distribución Unif(18,80): 
 ```R
 hist(edad, prob=TRUE,main="Edad",col=8)
 
@@ -255,7 +255,7 @@ Par.\Dist.| Normal | Logistica
      b    |99.89995|56.9967
        
 
-Distribución real de la variable *Prima* comparado con 20 simulaciones de una distribución Logistica(1000.5809,56.9967):
+Distribución real de la variable *Prima* comparada con 20 simulaciones de una distribución Logistica(1000.5809,56.9967):
 
 ```R
 hist(vPrima, prob=TRUE,main="Edad",col=8)
@@ -265,7 +265,7 @@ lines(density(rlogis(1000,1000.5809,56.9967)),col="blue")
 ```
 ![segmentacion](images/primafitlogis.png)
 
-Distribución real de la variable *Prima* comparado con 20 simulaciones de una distribución Normal(mean(vPrima),sd(vPrima)):
+Distribución real de la variable *Prima* comparada con 20 simulaciones de una distribución Normal(mean(vPrima),sd(vPrima)):
 
 ```R
 hist(vPrima, prob=TRUE,main="Edad",col=8)
