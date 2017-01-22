@@ -249,10 +249,10 @@ ajuste<-fit.cont(vPrima)
 ![segmentacion](images/primafit.png)
 
 
-Dist.   | Normal | Logistica
---------|--------|--------
-$\theta$|  1000  |1000.5809
-$\theta$|99.89995|56.9967
+Par.\Dist.| Normal | Logistica
+----------|--------|--------
+$\theta$  |  1000  |1000.5809
+$\theta$  |99.89995|56.9967
        
 
 Distribución real de la variable *Prima* comparado con 20 simulaciones de una distribución Logistica(1000.5809,56.9967):
