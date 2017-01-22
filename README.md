@@ -121,6 +121,11 @@ Dicho esto, con el fin de buscar más variables significativas al momento de cal
 ```R
 primas2<-primas
 
+#Cambiar el formato de Fecha de dd/mm/yyyy a sólo yyyy
+primas2$Fecha<-as.Date(primas2$Fecha,"%d/%m/%Y")
+clases <- cut(primas2$Fecha, "year", labels=c(2014,2015,2016,2017))
+primas2$Fecha <- as.factor(clases)
+
 #Prima de mujeres = prima de mujeres / 1.5
 primas2[primas2$Sexo=="F",]$Prima<-primas2[primas2$Sexo=="F",]$Prima/1.5
 
