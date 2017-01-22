@@ -51,7 +51,7 @@ Dado que el *p-value* es 0.1611, mayor que un nivel de significación 0.05 o 0.1
 
 Distribución real de la variable *Edades* comparado con 50 simulaciones de una distribución Unif(18,80): 
 ```R
-hist(edad, prob=TRUE,col=8)
+hist(edad, prob=TRUE,main="Edad",col=8)
 
 for(i in 1:50)
 lines(density(runif(1000,min(edad),max(edad))),col="blue")
