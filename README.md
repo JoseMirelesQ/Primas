@@ -57,6 +57,7 @@ Al segmentar obtenemos dos nodos, cada uno con el 50% de la población:
 De nuevo concluimos que las primas son más elevadas para las mujeres, estas son en promedio 50% más caras que las de los hombres.
 
 
+
 ##
 
 Con los resultados anteriores nos hemos dado cuenta que la variable *Sexo* influye bastante al momento de calcular una prima, pues en promedio las mujeres pagan más: ¿será que se modela diferente o ambos sexo seguirán la misma distibución salvo un recargo?
@@ -79,6 +80,7 @@ Min. | 1st Qu.| Median | Mean | 3rd Qu.| Max.
 1045 | 1398   | 1504   | 1500 | 1595   | 1958 
 
 
+
 Si analizamos la proporción de las medidas de tendencia de las primas de mujeres y hombres nos daremos cuenta, una vez más, que las mujeres pagan aproximadamente 50% más que los hombres.
 
 ```R
@@ -87,3 +89,24 @@ summary(primas[primas$Sexo=="F","Prima"])/summary(primas[primas$Sexo=="M","Prima
   Min.  | 1st Qu.| Median | Mean   | 3rd Qu.|   Max.
 --------|--------|--------|--------|--------|-------
 1.554597|1.494867|1.498008|1.500000|1.494845|1.535686 
+
+
+
+Lo mismo ocurre con las distribuciones que se ajustan a los datos. Gracias a la librería `rriskDistributions` y su función `fit.cont()`, podemos encontrar que la variable *Prima* tanto en hombres como en mujeres se ajusta, entre otras, a una distribución Normal o a una distribución Logistica basándonos en la prueba de *Kolmogórov-Smirnov*:
+
+```R
+library(rriskDistributions)
+
+#Ajustar distribución en variable "Prima"
+
+#Condición: Sexo=="M" (Hombres)
+ajuste<-fit.cont(primas[primas$Sexo=="M","Prima"])
+
+#Condición: Sexo=="F" (Mujeres)
+ajuste<-fit.cont(primas[primas$Sexo=="F","Prima"])
+```
+
+
+Dist. |  Hombres | Mujeres
+------|Mean | SD | Mean | SD
+Normal|1.557|1.49|1.4908|1.500 
