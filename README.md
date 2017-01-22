@@ -236,3 +236,14 @@ primas2<-primas2[,2:6]
 head(primas2)
 ```
 ![segmentacion](images/primas2.png)
+
+```R
+library(rriskDistributions)
+vPrima<-primas2[,"Prima"]
+
+#Ajustar distribución en variable "Prima"
+
+#Esta vez no hay alguna condición extra
+ajuste<-fit.cont(vPrima)
+```
+![segmentacion](images/primafit.png)
