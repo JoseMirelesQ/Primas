@@ -23,6 +23,38 @@ barplot(table(primas$Sexo), main="Sexo", col=8)
 ![Sexo](images/sexo.png)
 
 ### Edad
+Para resumir la variable *Edad* implementaremos el siguiente código:
+```R
+edad<-primas$Edad
+
+#Resumen de la variable "Edad"
+summary(edad)
+```
+![tabla](images/edad.png)
+
+Los resultados anteriores nos señalan que el rango de edad de los clientes es entre 18 y 80 años; en promedio tienen entre 48 y 49 años.
+
+La desviación estándar está dada por la función sd():
+```R
+#Desviación Estándar
+sd(edad)
+```
+![tabla](images/edadsd.png)
+
+```R
+#Prueba de Kolmogórov-Smirnov, estimadores por máxima verosimilitud
+ks.test(edad,y="punif",min(edad),max(edad))
+```
+![tabla](images/edadks.png)
+
+Dado que el *p-value* es 0.1611, mayor que un nivel de significación 0.05 o 0.10 no podemos rechazar la hipótesis de que la muestra *Edades* se distribuye como una Uniforme(a,b) con a=min(edad)=18 y b=max(edad)=80.
+
+Distribución real de la variable *Edades* comparado con varias simulaciones de una distribución Unif(18,80): 
+```R
+hist(edad, prob=TRUE,col=8)
+
+lines(density(runif(1000,min(edad),max(edad))),col="blue")
+```
 
 ### Marca de auto
 
