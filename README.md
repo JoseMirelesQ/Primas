@@ -49,12 +49,14 @@ ks.test(edad,y="punif",min(edad),max(edad))
 
 Dado que el *p-value* es 0.1611, mayor que un nivel de significación 0.05 o 0.10 no podemos rechazar la hipótesis de que la muestra *Edades* se distribuye como una Uniforme(a,b) con a=min(edad)=18 y b=max(edad)=80.
 
-Distribución real de la variable *Edades* comparado con varias simulaciones de una distribución Unif(18,80): 
+Distribución real de la variable *Edades* comparado con 50 simulaciones de una distribución Unif(18,80): 
 ```R
 hist(edad, prob=TRUE,col=8)
 
+for(i in 1:50)
 lines(density(runif(1000,min(edad),max(edad))),col="blue")
 ```
+![tabla](images/histedad.png)
 
 ### Marca de auto
 
