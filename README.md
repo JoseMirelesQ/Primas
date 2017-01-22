@@ -247,3 +247,20 @@ vPrima<-primas2[,"Prima"]
 ajuste<-fit.cont(vPrima)
 ```
 ![segmentacion](images/primafit.png)
+
+```R
+hist(vPrima, prob=TRUE,main="Edad",col=8)
+
+for(i in 1:20)
+lines(density(rlogis(1000,1000.5809,56.9967)),col="blue")
+```
+![segmentacion](images/primafitlogis.png)
+
+```R
+hist(vPrima, prob=TRUE,main="Edad",col=8)
+
+for(i in 1:20)
+lines(density(rnorm(1000,mean(vPrima),sd(vPrima))),col="blue")
+```
+![segmentacion](images/primafitnorm.png)
+
