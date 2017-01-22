@@ -12,13 +12,34 @@ tail(primas)
 Nuestra tabla de datos se compone de 1000 observaciones y seis variables: *Sexo*, *Prima*, *Edad*, *Marca*, *Fecha*, *Estado*.
 
 
-##Análisis Univariado: conociendo nuestra cartera
+##Análisis Univariado: Conociendo nuestra cartera
 
+### Sexo
 ```R
-#Gráfica de barras de la frequencia en la variable "Sexo"
+#Barras de frequencia en la variable "Sexo"
 barplot(table(primas$Sexo), main="Sexo", col=8)
 ```
 ![Sexo](images/sexo.png)
+
+### Edad
+
+### Marca de auto
+
+```R
+#Barras de frequencia en la variable "Marca"
+barplot(table(primas$Marca), main="Marca", col=8)
+```
+![Marca](images/marca.png)
+
+### Fecha
+
+### Estado
+```R
+#Barras de frequencia en la variable "Estado"
+barplot(table(primas$ESTADO), main="Estado", col=8)
+```
+![Estado](images/estado.png)
+
 
 ##Análisis Multivariado
 
