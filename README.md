@@ -80,6 +80,20 @@ barplot(table(primas$Marca), main="Marca", col=8)
 ![Marca](images/marca.png)
 
 ### Fecha
+Para la variable *Fecha* veremos las frecuencias por año:
+```R
+Año<-as.Date(primas$Fecha,"%d/%m/%Y")
+clases<-cut(Año, "year", labels=c(2014,2015,2016,2017))
+Año<-as.factor(clases)
+table(Año)
+```
+![Fecha](images/fechatabla.png)
+
+```R
+barplot(table(Año))
+```
+![Fecha](images/fechafrec.png)
+
 
 ### Estado
 ```R
