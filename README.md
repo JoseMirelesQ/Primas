@@ -126,9 +126,8 @@ primas2[primas2$Sexo=="F",]$Prima<-primas2[primas2$Sexo=="F",]$Prima/1.5
 
 #Eliminar la variable "Sexo"
 primas2<-primas2[,2:6]
-```
-Así es como se ve nuestra tabla ahora:
-```R
+
+#Así es como se ve nuestra tabla ahora:
 head(primas2)
 ```
 ![segmentacion](images/primas2.png)
