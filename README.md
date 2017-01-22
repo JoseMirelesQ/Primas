@@ -248,6 +248,8 @@ ajuste<-fit.cont(vPrima)
 ```
 ![segmentacion](images/primafit.png)
 
+Distribución real de la variable *Prima* comparado con 20 simulaciones de una distribución Logistica(1000.5809,56.9967):
+
 ```R
 hist(vPrima, prob=TRUE,main="Edad",col=8)
 
@@ -255,6 +257,8 @@ for(i in 1:20)
 lines(density(rlogis(1000,1000.5809,56.9967)),col="blue")
 ```
 ![segmentacion](images/primafitlogis.png)
+
+Distribución real de la variable *Prima* comparado con 20 simulaciones de una distribución Normal(mean(vPrima),sd(vPrima)):
 
 ```R
 hist(vPrima, prob=TRUE,main="Edad",col=8)
