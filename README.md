@@ -158,13 +158,17 @@ De nuevo concluimos que las primas son más elevadas para las mujeres, estas son
 
 
 ###Coeficientes Principales
+Análisis de coeficientes principales en *SAS Enterprise Miner*:
 
 ![Coef. princ.](images/cp1.png)
 
 ![Coef. princ.](images/cpcoef.png)
 
+La primer componente principal divide en dos grupos a los clientes y básicamente se basa en la variable *Sexo*.
+
 ![Coef. princ.](images/cp2.png)
 
+El resultado de este análisis nos muestra 4 componentes principales que apenas alcanzan a explicar el 39.16% de la varianza, para explicar al menos el 75% de la varianza necesitaríamos 9 componentes principales, que son más que la cantidad de variables iniciales. 
 
 ##Distribución de la variable *Prima*
 
