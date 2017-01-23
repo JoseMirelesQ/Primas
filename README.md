@@ -270,7 +270,7 @@ Par.\Dist.| Normal | Logistica
 Distribución empirírica de la variable *Prima* comparada con 20 simulaciones de una distribución Logistica(1000.5809,56.9967):
 
 ```R
-hist(vPrima, prob=TRUE,main="Edad",col=8)
+hist(vPrima, prob=TRUE,main="Logística",col=8)
 
 for(i in 1:20)
 lines(density(rlogis(1000,1000.5809,56.9967)),col="blue")
@@ -280,7 +280,7 @@ lines(density(rlogis(1000,1000.5809,56.9967)),col="blue")
 Distribución empirírica de la variable *Prima* comparada con 20 simulaciones de una distribución Normal(mean(vPrima),sd(vPrima)):
 
 ```R
-hist(vPrima, prob=TRUE,main="Edad",col=8)
+hist(vPrima, prob=TRUE,main="Normal",col=8)
 
 for(i in 1:20)
 lines(density(rnorm(1000,mean(vPrima),sd(vPrima))),col="blue")
