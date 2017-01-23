@@ -157,6 +157,14 @@ Al segmentar obtenemos dos nodos, cada uno con el 50% de la población:
 De nuevo concluimos que las primas son más elevadas para las mujeres, estas son en promedio 50% más caras que las de los hombres.
 
 
+###Coeficientes Principales
+
+![Coef. princ.](images/cp1.png)
+
+![Coef. princ.](images/cpcoef.png)
+
+![Coef. princ.](images/cp2.png)
+
 
 ##Distribución de la variable *Prima*
 
