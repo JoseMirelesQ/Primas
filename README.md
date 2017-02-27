@@ -1,5 +1,5 @@
 #Tabla de contenidos
-1.- [Sexo] (#ejemplo)
+1.- [ejemplo] (#Sexo)
 # Primas
 
 Para poder trabajar con el archivo *primas.csv* en *R* y darle un primer vistazo a la tabla de datos ejecutaremos el siguiente código:
